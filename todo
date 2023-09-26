@@ -1,0 +1,27 @@
+[] Register User 
+[] Login User
+[] While login assign Jwt session and refresh Token and Role
+[] Authenticate Role based access to different Route
+[] logged user can create customer Base and save their data 
+[] Create a Uuid for every user 
+[]  Forgot password
+[]  verification
+[]  List of all users in admin Role 
+[]  Editor Role for particular orginatization 
+[]
+[]
+[]
+[]
+[]
+
+app.use(cors({
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods:":"*",
+    "Access-Control-Request-Headers":"*",
+    "Access-Control-Allow-Credentials":"*"
+}))
+
+
+connect('mongodb://0.0.0.0:27017').then(()=>{
+    console.log("mongo server connected..");
+})
